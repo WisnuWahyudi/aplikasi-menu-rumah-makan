@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <CheckBox
+                android:id="@+id/cb_minuman4"
+                style="@style/itemMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Air Jeruk Panas/Dingin (Rp.6000)"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_minuman3"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <CheckBox
+                android:id="@+id/cb_minuman1"
+                style="@style/itemMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teh Panas/Dingin (Rp.5000)"
+                app:layout_constraintBottom_toTopOf="@+id/cb_minuman2"
+                app:layout_constraintStart_toStartOf="@+id/cb_minuman2"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <CheckBox
+                android:id="@+id/cb_minuman3"
+                style="@style/itemMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Air Mineral 600ml (Rp.3000)"
+                app:layout_constraintBottom_toTopOf="@+id/cb_minuman4"
+                app:layout_constraintStart_toStartOf="@+id/cb_minuman4"
+                app:layout_constraintTop_toBottomOf="@+id/cb_minuman2"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <CheckBox
+                android:id="@+id/cb_minuman2"
+                style="@style/itemMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Air Mineral 250ml (Rp.1000)"
+                app:layout_constraintBottom_toTopOf="@+id/cb_minuman3"
+                app:layout_constraintStart_toStartOf="@+id/cb_minuman3"
+                app:layout_constraintTop_toBottomOf="@+id/cb_minuman1"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/headerMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Menu Minuman"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_makanan4" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/logoText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Rumah Makan Zalia"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="79dp"
+                android:layout_height="55dp"
+                android:src="@drawable/logo_rumah_makan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.003"
+                app:srcCompat="@drawable/logo_rumah_makan" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/headerMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="120dp"
+                android:text="@string/menu_makanan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/cb_makanan1"
+                style="@style/itemMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nasi Goreng (Rp.15.000)"
+                app:layout_constraintBottom_toTopOf="@+id/cb_makanan2"
+                app:layout_constraintStart_toStartOf="@+id/cb_makanan2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.01999998"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+
+            <CheckBox
+                android:id="@+id/cb_makanan3"
+                style="@style/itemMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayam Bakar + Nasi (Rp.16.000)"
+                app:layout_constraintBottom_toTopOf="@+id/cb_makanan4"
+                app:layout_constraintStart_toStartOf="@+id/cb_makanan4"
+                app:layout_constraintTop_toBottomOf="@+id/cb_makanan2"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <CheckBox
+                android:id="@+id/cb_makanan4"
+                style="@style/itemMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayam Goreng + Nasi (Rp.15.000)"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.069"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_makanan3"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <CheckBox
+                android:id="@+id/cb_makanan2"
+                style="@style/itemMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mie Goreng (Rp.12.000)"
+                app:layout_constraintBottom_toTopOf="@+id/cb_makanan3"
+                app:layout_constraintStart_toStartOf="@+id/cb_makanan3"
+                app:layout_constraintTop_toBottomOf="@+id/cb_makanan1"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <EditText
+                android:id="@+id/et_makanan2"
+                style="@style/itemMenu"
+                android:layout_width="55dp"
+                android:layout_height="47dp"
+                android:ems="5"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintBaseline_toBaselineOf="@+id/cb_makanan2"
+                app:layout_constraintStart_toStartOf="@+id/et_makanan3"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <EditText
+                android:id="@+id/et_makanan1"
+                style="@style/itemMenu"
+                android:layout_width="55dp"
+                android:layout_height="47dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintBaseline_toBaselineOf="@+id/cb_makanan1"
+                app:layout_constraintStart_toStartOf="@+id/et_makanan2"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <EditText
+                android:id="@+id/et_makanan4"
+                style="@style/itemMenu"
+                android:layout_width="55dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintBaseline_toBaselineOf="@+id/cb_makanan4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <EditText
+                android:id="@+id/et_minuman4"
+                style="@style/itemMenu"
+                android:layout_width="55dp"
+                android:layout_height="47dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintBaseline_toBaselineOf="@+id/cb_minuman4"
+                app:layout_constraintStart_toStartOf="@+id/et_minuman3" />
+
+            <EditText
+                android:id="@+id/et_minuman3"
+                style="@style/itemMenu"
+                android:layout_width="55dp"
+                android:layout_height="47dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintBaseline_toBaselineOf="@+id/cb_minuman3"
+                app:layout_constraintStart_toStartOf="@+id/et_minuman2"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <EditText
+                android:id="@+id/et_minuman2"
+                style="@style/itemMenu"
+                android:layout_width="55dp"
+                android:layout_height="47dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintBaseline_toBaselineOf="@+id/cb_minuman2"
+                app:layout_constraintStart_toStartOf="@+id/et_minuman1"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <EditText
+                android:id="@+id/et_minuman1"
+                style="@style/itemMenu"
+                android:layout_width="55dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintBaseline_toBaselineOf="@+id/cb_minuman1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <EditText
+                android:id="@+id/et_makanan3"
+                style="@style/itemMenu"
+                android:layout_width="55dp"
+                android:layout_height="47dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintBaseline_toBaselineOf="@+id/cb_makanan3"
+                app:layout_constraintStart_toStartOf="@+id/et_makanan4"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="8dp"
+                android:onClick="hitungTotal"
+                android:text="Hitung"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_minuman4" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/itemMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="Total Harga Makanan :"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/itemMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="Total Harga Minuman :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/itemMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="TOTAL :"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/itemMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="Bayar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintVertical_bias="0.142" />
+
+            <TextView
+                android:id="@+id/tv_total_makanan"
+                style="@style/itemMenu"
+                android:layout_width="81dp"
+                android:layout_height="24dp"
+                android:gravity="right"
+                android:text="0"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintStart_toStartOf="@+id/tv_total_minuman"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
+
+            <TextView
+                android:id="@+id/tv_total_minuman"
+                style="@style/itemMenu"
+                android:layout_width="82dp"
+                android:layout_height="22dp"
+                android:gravity="right"
+                android:text="0"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintStart_toStartOf="@+id/tv_grand_total" />
+
+            <TextView
+                android:id="@+id/tv_grand_total"
+                style="@style/itemMenu"
+                android:layout_width="82dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="28dp"
+                android:gravity="right"
+                android:text="0"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/et_bayar"
+                style="@style/itemMenu"
+                android:layout_width="85dp"
+                android:layout_height="39dp"
+                android:gravity="right"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.863"
+                app:layout_constraintStart_toEndOf="@+id/textView9" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:onClick="hitungKembali"
+                android:text="Bayar"
+                app:layout_constraintStart_toStartOf="@+id/button"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>
