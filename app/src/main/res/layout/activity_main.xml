@@ -371,7 +371,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
                 android:onClick="hitungKembali"
-                android:text="Bayar"
+                android:text="Pay"
                 app:layout_constraintStart_toStartOf="@+id/button"
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
